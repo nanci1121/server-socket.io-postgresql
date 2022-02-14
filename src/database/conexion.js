@@ -1,11 +1,12 @@
 const { Pool } = require("pg")
 // Coloca aquí tus credenciales
 const pool = new Pool({
-  user: "vmv",
-  host: "192.168.1.66",
-  database: "firstapi",
-  password: "vmv",
-  port: 5432,
+  user: process.env.PGUSER,
+  host: process.env.PGHOST,
+  database: process.env.PGDATABASE,
+  password: process.env.PGPASSWORD,
+  port: process.env.PGPORT,
+
 });
 
 module.exports = {

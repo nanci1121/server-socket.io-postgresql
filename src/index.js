@@ -18,8 +18,7 @@ require('./sockets/socket');
 const publicPath =path.resolve(__dirname, 'public');
 app.use(express.static(publicPath));
 
-
-
+//Lectura y parseo del body
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
