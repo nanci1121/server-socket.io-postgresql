@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-app.use(require('./routes/routes'))
+app.use('/api',require('./routes/routes'))
 
 server.listen(port, () => {
   console.log(`Example app listening on port ${port}`)

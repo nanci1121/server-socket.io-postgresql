@@ -25,13 +25,13 @@ router.post('/login',
         check('email', 'El email es obligatorio').isEmail(),
         check('password', 'El password es obligatorio').not().isEmpty(), validarCampos
     ], login);
-router.post('/users',
+router.post('/login/new',
     [
         check('name', 'El nombre es obligatorio').not().isEmpty(),
         check('email', 'El email es obligatorio').isEmail(),
         check('password', 'El password es obligatorio').not().isEmpty(), validarCampos
     ], createUsuario);
-router.get('/renew', validarJWT, renewToken); /* [
+router.get('/login/renew', validarJWT, renewToken); /* [
     check('email', 'El email es obligatorio').isEmail(),
     check('password', 'El password es obligatorio').not().isEmpty(), validarCampos
 ], validarJWT,  */
