@@ -22,7 +22,7 @@ const usuarioId = async (req, res = response) => {
 
         } else {
 
-            res.json(resultado.rows);
+            res.json(resultados.rows[0]);
         }
     } catch (error) {
         console.log(error.stack);

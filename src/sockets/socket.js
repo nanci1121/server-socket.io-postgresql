@@ -14,9 +14,22 @@ io.on('connection', (client) => {
     if (!valid) {
         return client.disconnect();
     }
-
+    const id1 = String(id);
     //cliente autenticado
-    usuarioConectado(id);
+    usuarioConectado(id1);
+
+    //ingresar al usuario a una sala especifica
+    //Sala Global,cliente id, sala con nombre del id,
+    client.join(id1);
+
+
+    //escuchar del cliente el mensaje-personal
+    client.on('mensaje-personal',(payload)=>{
+        console.log(payload);
+        io.to(payload.para).emit('mensaje-personal',payload);
+
+    });
+
 
     //desconectar cliente
     client.on('disconnect', () => {

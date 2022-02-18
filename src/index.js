@@ -27,8 +27,12 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-app.use('/api',require('./routes/routes'))
+//mis rutas
+app.use('/api',require('./routes/routes'));
+app.use('/api/usuarios',require('./routes/usuarios'));
 
+
+//ejecucion del servidor
 server.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
