@@ -22,5 +22,13 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nanci1121/server-socket.io-postgresql.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nanci1121/server-socket.io-postgresql/issues"
+  },
+  "homepage": "https://github.com/nanci1121/server-socket.io-postgresql#readme"
 }
