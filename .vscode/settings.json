@@ -1,24 +1,14 @@
 {
     "sqltools.connections": [
-        {
+       {
             "previewLimit": 50,
             "server": "localhost",
             "port": 5432,
             "driver": "PostgreSQL",
-            "name": "ioc",
-            "database": "taller",
-            "username": "vmv",
-            "password": "vmv"
-        },
-        {
-            "previewLimit": 50,
-            "server": "localhost",
-            "port": 5432,
-            "driver": "PostgreSQL",
-            "name": "Firstapi",
-            "database": "firstapi",
-            "username": "vmv",
-            "password": "vmv"
+            "name": "Mi_base_pruebas",
+            "database": "mi_base_pruebas",
+            "username": "usuario_pruebas",
+            "password": "password_pruebas"
         }
     ]
 }
